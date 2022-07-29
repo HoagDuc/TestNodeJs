@@ -40,8 +40,20 @@
               <a href="/Detail/user/<%= dataUser[i].ID %>" target="_blank">
                 Detail
               </a>
-              <button>Edit</button>
-              <button>Delete</button>
+
+              <form action="edit-user/<%= dataUser[i].ID %>" method="get">
+                <button>Edit</button>
+              </form>
+
+              <form action="/delete-user" method="post">
+                <input
+                  type="text"
+                  hidden
+                  value="<%= dataUser[i].ID %>"
+                  name="userID"
+                />
+                <button type="submit">Delete</button>
+              </form>
             </td>
           </tr>
           <% } %>
@@ -69,7 +81,7 @@
             <input type="text" name="address" />
           </div>
           <div class="form-row">
-            <button class="btn-add" type="submit">them</button>
+            <button class="btn" type="submit">Add</button>
           </div>
         </form>
       </div>

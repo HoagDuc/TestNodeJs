@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update User</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="form-control">
+      <form action="/update-user" class="form" method="post">
+        <h3><b>Update User</b></h3>
+        <div class="form-row">
+          <label for="inputFirstName" class="form-label">FirstName:</label
+          ><br />
+          <input
+            type="text"
+            name="firstName"
+            value="<%= dataUser.firstName %>"
+          />
+        </div>
+        <div class="form-row">
+          <label for="inputLastName" class="form-label">LastName:</label><br />
+          <input type="text" name="lastName" value="<%= dataUser.lastName %>" />
+        </div>
+        <div class="form-row">
+          <label for="inputEmail" class="form-label">Email:</label><br />
+          <input type="email" name="email" value="<%= dataUser.email %>" />
+        </div>
+        <div class="form-row">
+          <label for="inputAddress" class="form-label">Address:</label><br />
+          <input type="text" name="address" value="<%= dataUser.address %>" />
+        </div>
+        <input type="text" name="ID" value="<%= dataUser.ID %>" hidden />
+        <div class="form-row">
+          <button class="btn" type="submit">Save</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -31,12 +31,12 @@ nav li a:hover {
 
 .container {
   margin: auto;
-  width: 1280px;
+  width: 95%;
 }
 .form {
   text-align: center;
 }
 
-.btn-add {
+.btn {
   margin-top: 15px;
 }
