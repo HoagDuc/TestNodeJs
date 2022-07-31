@@ -36,7 +36,19 @@ nav li a:hover {
 .form {
   text-align: center;
 }
-
+.form-row {
+  margin-top: 10px;
+}
+.form-input {
+  margin-top: 10px;
+}
 .btn {
   margin-top: 15px;
+}
+
+.form-title {
+  margin-top: 10px;
+}
+hr {
+  margin-top: 30px;
 }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload File</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/upload-file" class="active">Upload File</a></li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="upload-file-container">
+        <form action="/upload" method="post" enctype="multipart/form-data">
+          <h1 class="form-title">Upload single File</h1>
+          <div class="form-row">
+            <label for="inputFile" class="form-label">Select File:</label><br />
+            <input type="file" name="file-name" class="form-input" />
+          </div>
+
+          <div class="form-row">
+            <button type="submit">Save file</button>
+          </div>
+        </form>
+
+        <hr />
+
+        <form
+          action="/upload-mutiple"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <h1 class="form-title">Uplaod single File</h1>
+          <div class="form-row">
+            <label for="inputFile" class="form-label"
+              >Select Mutiple File:</label
+            ><br />
+            <input
+              type="file"
+              name="mutiple-file-name"
+              class="form-input"
+              multiple
+            />
+          </div>
+
+          <div class="form-row">
+            <button>Save file</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
