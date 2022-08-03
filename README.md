@@ -1,12 +1,16 @@
 # Chi tiết:
 
 #### Chức Năng:
+
 - CRUD Users (sử dụng lưu dữ liệu từ DataBase MySQL)
 - Test Upload File
 
-#### Môi trường: 
+#### Môi trường:
+
 - NodeJS v14.17.6
-#### Công nghệ sử dụng: 
+
+#### Công nghệ sử dụng:
+
 - @babel/core v7.18.9
 - @babel/node v7.18.9
 - @babel/preset-env v7.18.9
@@ -18,3 +22,4 @@
 - multer v1.4.5-lts.1
 - mysql2 v2.3.3
 - nodemon v2.0.19
+- morgan v1.10.0
